@@ -1,0 +1,26 @@
+{
+    "name": "Renato França (SirReinato)",
+    "job": "Dev Front End",
+    "foto": "https://github.com/SirReinato.png",
+    "playlists":{
+        "jogos": [
+            {
+                "title": "Primeiro Video jogos",
+                "url": "a url",
+                "thumb": "a thumb"
+            },
+            {
+                "title": "segundo  Video jogos",
+                "url": "a url",
+                "thumb": "a thumb"
+            }
+        ],
+        "FrontEnd": [
+            {
+                "title": "Primeiro FrontEnd",
+                "url": "a url",
+                "thumb": "a thumb"
+            }
+        ]
+    }
+}
