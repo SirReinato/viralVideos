@@ -1,7 +1,10 @@
+import Cards from './Cards/Cards';
 import styles from './TimeLine.module.scss';
 
 const TimeLine = ({ titulos}) => {
 	const playlistsName = Object.keys(titulos.playlists)
+	const aluraTubes = titulos.AluraTubes;
+	console.log(titulos.AluraTubes);
 
 	return (
 		<section className={styles.timeline}>
@@ -10,11 +13,11 @@ const TimeLine = ({ titulos}) => {
 
 				return (
 					<article key={nomesDaPlaylist}>
-						<h3>{nomesDaPlaylist}</h3>
-						<div>
+						<h3 className={styles.nomePlaylist}>{nomesDaPlaylist}</h3>
+						<div className={styles.localVideos}>
 							{videos.map(video =>{
 								return (
-									<p key={video.title}>{video.title}</p>
+									<Cards {...video} key={video.url}/>
 								)
 							})}
 						</div>
@@ -22,6 +25,12 @@ const TimeLine = ({ titulos}) => {
 				)
 					
 			})}
+			{/* {aluraTubes.map(dados =>{
+				return (
+					
+				)
+			})} */}
+
 
 		</section>
 	);

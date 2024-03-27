@@ -1,3 +1,31 @@
 .timeline {
-  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 32px;
+
+  background: #F9F9F9;
+
+  article {
+    .nomePlaylist {
+      font-family: Helvetica;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 18px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      color: #000;
+
+    }
+
+    .localVideos {
+      width: 100%;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: flex-start;
+      gap: 8px;
+      align-items: center;
+    }
+  }
 }
